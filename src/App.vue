@@ -48,7 +48,7 @@ const successRemoveTodo = () => {
 
 const add = (todo) => {
   if (!todo) return showAlert.value = true  
-  todos.value.push({
+  todos.value.unshift({
     checked: false,
     text: todo
   })
