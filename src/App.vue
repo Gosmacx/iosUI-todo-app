@@ -2,7 +2,6 @@
 
   <!-- Alert Compnent  -->
   <alert v-if="showAlert" :close="closeAlert" />
-  
 
   <div class="flex items-center justify-center flex-col w-full h-screen" >
 
@@ -14,9 +13,11 @@
        <todo-item v-for="item in todos" :key="item" :item="item" :removeTodo="removeTodo" />
     </section>
 
+    <!-- Success Menu Component  -->
     <success-menu :success="successRemoveTodo" :cancel="cancelMenu" v-if="showEdit" />
 
   </div>
+
 </template>
 
 <script setup>
@@ -36,18 +37,20 @@ const closeAlert = () => showAlert.value = false;
 const cancelMenu = () => showEdit.value = false;
 
 const removeTodo = (todo) => {
-  targetTodo.value = todo;
-  showEdit.value = true;
+  targetTodo.value = todo; // set the target todo
+  showEdit.value = true; // show the success menu
 }
 
 const successRemoveTodo = () => {
-  todos.value = todos.value.filter(item => item !== targetTodo.value)
-  targetTodo.value = null
-  showEdit.value = false
+  // if the user confirms the deletion
+  todos.value = todos.value.filter(item => item !== targetTodo.value) // remove the target todo
+  targetTodo.value = null // reset the target todo
+  showEdit.value = false // hide the success menu
 }
 
 const add = (todo) => {
-  if (!todo) return showAlert.value = true  
+  if (!todo) return showAlert.value = true  // show alert if the text is empty
+  // add the todo to the list top
   todos.value.unshift({
     checked: false,
     text: todo

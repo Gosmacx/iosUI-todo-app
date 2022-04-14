@@ -6,6 +6,7 @@
           {{ item.text }}
         </span>
 
+        <!-- Edit Button  -->
         <button class="group text-[#007bff] relative pl-1 decoration-[#007bff] hover:underline" href="#" >
           
           <span>Edit</span>
@@ -45,7 +46,7 @@ const props = defineProps({
 })
 
 const check  = () => {
-  props.item.checked = !props.item.checked
+  props.item.checked = !props.item.checked // toggle the checked state
 }
 
 </script>

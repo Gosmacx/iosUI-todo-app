@@ -6,6 +6,7 @@
         
         <!-- Top List -->
         <div class="flex px-3 w-full rounded-xl bg-gray-200 flex-col items-center" >
+            
             <!-- List Items -->
             <div class="h-12 cursor-pointer flex items-center justify-center space-x-2 w-full border-b border-b-gray-300" >
                 <span class="text-lg font-medium text text-[#007bff]" >Save</span>
@@ -35,15 +36,3 @@ const props = defineProps({
 })
 
 </script>
-
-           <!-- <div class="w-60 h-60 rounded-xl z-10 bg-gray-200 fixed ml-10" >
-              <div class="h-12 text-gray-800 flex items-center justify-between px-2 border-b border-b-gray-300" >
-               <span>Tamamlandı</span>
-               <label class="form-switch">
-                 <input type="checkbox"><i></i>
-               </label>
-             </div>
-             <div class="h-12 text-red-500 flex items-center justify-between px-2 border-b border-b-gray-300" >               <span>Sil</span>
-              <img src="../assets/remove.png" alt="">
-            </div>
-           </div> -->

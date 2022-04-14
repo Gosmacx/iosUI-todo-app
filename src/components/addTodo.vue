@@ -20,8 +20,8 @@ const props = defineProps({
 })
 
 const addTodo = (val) => {
-    props.todo(val)
-    text.value = null;
+    props.todo(val) // call the parent function 
+    text.value = null; // reset the input value
 }
 
 </script>
