@@ -8,7 +8,7 @@
         <div class="flex px-3 w-full rounded-xl bg-gray-200 flex-col items-center" >
             
             <!-- List Items -->
-            <div class="h-12 cursor-pointer flex items-center justify-center space-x-2 w-full border-b border-b-gray-300" >
+            <div @click="cancel" class="h-12 cursor-pointer flex items-center justify-center space-x-2 w-full border-b border-b-gray-300" >
                 <span class="text-lg font-medium text text-[#007bff]" >Save</span>
             </div>
             <div @click="success" class="h-12 cursor-pointer flex items-center justify-center space-x-2 w-full border-b border-b-gray-300" >
