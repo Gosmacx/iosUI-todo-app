@@ -9,7 +9,7 @@ Todo app with ios ui
 
 ![ss](https://gcdnb.pbrd.co/images/xlp0b9SVeP1j.png?o=1)
 
-**is a quote** : [Original Link](https://www.cssscript.com/realistic-ios-switch-pure-css/)
+**Switch is a quote** : [Original Link](https://www.cssscript.com/realistic-ios-switch-pure-css/)
 
 ## ScreenShots
 
