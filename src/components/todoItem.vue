@@ -13,7 +13,7 @@
         <!-- Edit Button  -->
         <button class="group text-[#007bff] relative pl-1 decoration-[#007bff] hover:underline" href="#" >
           
-          <span>Edit</span>[#007bff]
+          <span>Edit</span>
 
           <!-- Edit Menu  -->
           <div class="w-60 pb-2 opacitiyEffect invisible group-focus-within:visible opacity-0 group-focus-within:opacity-100 transition-all rounded-xl z-10 bg-gray-200 fixed" >
