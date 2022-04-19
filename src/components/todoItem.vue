@@ -6,13 +6,14 @@
           {{ item.text }}
         </span>
 
+        <!-- Rename Mode -->
         <input v-model="item.text" v-else  type="text" class="text-white rounded shadow shadow-gray-600 outline-none bg-red-500 p-1 whitespace-nowrap overflow-hidden text-ellipsis" >
 
 
         <!-- Edit Button  -->
         <button class="group text-[#007bff] relative pl-1 decoration-[#007bff] hover:underline" href="#" >
           
-          <span>Edit</span>
+          <span>Edit</span>[#007bff]
 
           <!-- Edit Menu  -->
           <div class="w-60 pb-2 opacitiyEffect invisible group-focus-within:visible opacity-0 group-focus-within:opacity-100 transition-all rounded-xl z-10 bg-gray-200 fixed" >
