@@ -2,9 +2,12 @@
       <div class="w-full h-12 border-b whitespace-nowrap overflow-hidden text-ellipsis flex items-center justify-between border-b-gray-200" >
         
         <!-- Todo Text  -->
-        <span :class="{checkedItem: item.checked} " class="text-gray-700 whitespace-nowrap overflow-hidden text-ellipsis" > 
+        <span v-if="!renameMode" :class="{checkedItem: item.checked} " class="text-gray-700 whitespace-nowrap overflow-hidden text-ellipsis" > 
           {{ item.text }}
         </span>
+
+        <input v-model="item.text" v-else  type="text" class="text-white rounded shadow shadow-gray-600 outline-none bg-red-500 p-1 whitespace-nowrap overflow-hidden text-ellipsis" >
+
 
         <!-- Edit Button  -->
         <button class="group text-[#007bff] relative pl-1 decoration-[#007bff] hover:underline" href="#" >
@@ -22,8 +25,13 @@
                </label>
              </div>
 
-             <div class="h-12 flex items-center justify-between px-2 border-b border-b-gray-300" >               
+             <div v-if="!renameMode" @click="renameMode = !renameMode" class="h-12 flex items-center justify-between px-2 border-b border-b-gray-300" >               
                <span class="text-gray-800" >Rename</span>
+              <img src="../assets/rename.png" alt="">
+            </div>
+
+             <div v-else @click="renameMode = false" class="h-12 flex items-center justify-between px-2 border-b border-b-gray-300" >               
+               <span class="text-[#007bff]" >Save</span>
               <img src="../assets/rename.png" alt="">
             </div>
 
@@ -39,6 +47,9 @@
 </template>
 
 <script setup>
+import { ref } from "vue"
+
+const renameMode = ref(false)
 
 const props = defineProps({
     item: Object,
