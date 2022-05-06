@@ -7,7 +7,13 @@
         </span>
 
         <!-- Rename Mode -->
-        <input v-model="item.text" v-else  type="text" class="text-white rounded shadow shadow-gray-600 outline-none bg-red-500 p-1 whitespace-nowrap overflow-hidden text-ellipsis" >
+        <input 
+          v-else 
+          v-model="item.text"  
+          type="text" 
+          @keyup.enter="renameMode"
+          class="text-white rounded shadow shadow-gray-600 outline-none bg-red-500 p-1 whitespace-nowrap overflow-hidden text-ellipsis" 
+        >
 
 
         <!-- Edit Button  -->
