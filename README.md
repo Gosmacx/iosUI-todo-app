@@ -7,14 +7,14 @@ Todo app with ios ui
 
 ## Switch
 
-![ss](https://gcdnb.pbrd.co/images/xlp0b9SVeP1j.png?o=1)
-
 **Switch is a quote** : [Original Link Of Switch](https://www.cssscript.com/realistic-ios-switch-pure-css/)
 
 ## ScreenShots
 
-![ss](https://gcdnb.pbrd.co/images/9IxVSEmg4Yco.png?o=1)
+![ss](https://raw.githubusercontent.com/Gosmacx/iosUI-todo-app/main/screenshots/todo-1.png)
 
-![ss](https://gcdnb.pbrd.co/images/kJAMwIHqqJr7.png?o=1)
+![ss](https://raw.githubusercontent.com/Gosmacx/iosUI-todo-app/main/screenshots/todo-2.png)
 
-![ss](https://gcdnb.pbrd.co/images/TuVTuoaIKDLq.png?o=1)
+![ss](https://raw.githubusercontent.com/Gosmacx/iosUI-todo-app/main/screenshots/todo-3.png)
+
+![ss](https://raw.githubusercontent.com/Gosmacx/iosUI-todo-app/main/screenshots/todo-4.png)
